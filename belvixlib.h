@@ -259,7 +259,7 @@ bv_DateTime bv_DateTime_new(
  * @param timestamp Unix timestamp
  * @return bv_DateTime instance
  */
-bv_DateTime bv_DateTime_from_unix(bv_ullong timestamp) {
+bv_DateTime bv_DateTime_from_unix(bv_ulong timestamp) {
     struct tm tm = *gmtime(&timestamp);
 
     bv_DateTime datetime = {
